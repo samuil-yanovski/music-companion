@@ -1,5 +1,6 @@
 package com.yanovski.musiccompanion
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -46,6 +47,15 @@ fun Greeting(
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
+    MusicCompanionTheme {
+        Greeting("Android")
+    }
+}
+
+@Suppress("ktlint:standard:function-naming")
+@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Composable
+fun GreetingDarkPreview() {
     MusicCompanionTheme {
         Greeting("Android")
     }
