@@ -25,7 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       
-
+      - name: "Permission to gradle File"
+        run: chmod +x gradlew
+      
       # Runs a single command using the runners shell
       - name: Run Lint
         run: ./gradlew lint
