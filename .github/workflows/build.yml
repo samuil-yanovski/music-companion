@@ -33,8 +33,8 @@ jobs:
         run: ./gradlew lint
 
       # Runs a single command using the runners shell
-      - name: Run KtLint
-        run: ./gradlew ktlintCheck
+      - name: Run detekt
+        run: ./gradlew detekt
 
       # Runs a single command using the runners shell
       - name: Build with Gradle
