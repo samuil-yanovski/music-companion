@@ -33,6 +33,10 @@ jobs:
         run: ./gradlew lint
 
       # Runs a single command using the runners shell
+      - name: Run KtLint
+        run: ./gradlew ktlintCheck
+
+      # Runs a single command using the runners shell
       - name: Build with Gradle
         run: ./gradlew assemble
 
