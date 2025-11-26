@@ -5,6 +5,10 @@ plugins {
     alias(libs.plugins.detekt)
 }
 
+detekt {
+    config.setFrom("../config/detekt.yml")
+}
+
 android {
     namespace = "com.yanovski.musiccompanion"
     compileSdk {
